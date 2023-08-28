@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer utilities {
+  body {
+    @apply font-Inter text-white font-normal text-base bg-bodyBg
+  }
+  html {
+      -webkit-tap-highlight-color: transparent;
+  }
+  .current-menu-item {
+    @apply text-white
+  }
+}
+.slick-track {
+  margin-right:-15px !important;
+  margin-left:-15px !important;
+}
+.slick-slide {
+  padding-right:15px;
+  padding-left:15px;
+}
+.social-media li:nth-child(1) {
+  @apply top-[43%] left-[20%]
+}
+.social-media li:nth-child(2) {
+  @apply top-[15%] left-[15%] md:left-[18%]
+}
+.social-media li:nth-child(3) {
+  @apply -top-[60px] md:-top-[90px] left-[30%] md:left-[35%]
+}
+.social-media li:nth-child(4) {
+  @apply -top-[60px] right-[22%]
+}
+.social-media li:nth-child(5) {
+  @apply top-[20%] right-[12%]
+}
+.social-media li:nth-child(6) {
+  @apply  top-[43%] right-[18%]
+}
+.social-media-shadow {
+  box-shadow: 0px 0px 0px 5px rgba(255,255,255,0.15), 0px 0px 0px 14px rgba(255,255,255,0.10);
+}
