@@ -50,6 +50,15 @@ const HeroBanner = () => {
                 href="/"
               >
                 My work
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+                  <mask id="mask0_744_115" style={{ maskType :'alpha'}} maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="21">
+                    <rect y="0.5" width="20" height="20" fill="#D9D9D9"/>
+                  </mask>
+                  <g mask="url(#mask0_744_115)">
+                    <path d="M11.6667 15.5L10.5 14.2917L13.4583 11.3333H3.33334V9.66667H13.4583L10.5 6.70833L11.6667 5.5L16.6667 10.5L11.6667 15.5Z" fill="#EEEEEE"/>
+                  </g>
+                </svg>
               </Link>
             </div>
           </div>

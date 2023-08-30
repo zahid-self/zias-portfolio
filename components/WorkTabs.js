@@ -109,45 +109,48 @@ const WorkTabs = () => {
                 WorkUrl,
               } = curElm;
               return (
-                <div
-                  key={id}
-                  className="p-5 bg-[#292929] grid grid-cols-1 lg:grid-cols-2 gap-y-6 gap-x-3 hover:bg-[#3D3D3D]"
-                >
-                  <div className="flex flex-col justify-between order-last lg:order-first">
-                    <h2 className="text-4xl font-bold text-white">
-                      {WorkTitle}
-                    </h2>
-                    <div className="mt-5">
-                      <p className="text-base text-[#F5F5F5]">{WorkDesc}</p>
-                      <ul className="flex flex-wrap gap-2 my-5">
-                        {WorkCatagory.map((catagoryItem, index) => {
-                          return (
-                            <li
-                              key={index}
-                              className="px-2.5 py-1 rounded-[30px] border border-[#B8B8B8] inline-block text-xs text-[#B8B8B8] capitalize hover:bg-[#121011] hover:text-white hover:border-[#121011]"
-                            >
-                              {catagoryItem}
-                            </li>
-                          );
-                        })}
-                      </ul>
-                      <a
-                        className="inline-flex gap-x-2 items-center text-lg font-semibold text-white"
-                        href={WorkUrl}
-                        target="_blank"
-                      >
-                        View Project <FaExternalLinkAlt />
-                      </a>
+                <>
+                  <div
+                    key={id}
+                    className="p-5 bg-[#292929] grid grid-cols-1 lg:grid-cols-2 gap-y-6 gap-x-3 hover:bg-[#3D3D3D] group relative"
+                  >
+                    <div className="flex flex-col justify-between order-last lg:order-first">
+                      <h2 className="text-4xl font-bold text-white">
+                        {WorkTitle}
+                      </h2>
+                      <div className="mt-5">
+                        <p className="text-base text-[#F5F5F5]">{WorkDesc}</p>
+                        <ul className="flex flex-wrap gap-2 my-5">
+                          {WorkCatagory.map((catagoryItem, index) => {
+                            return (
+                              <li
+                                key={index}
+                                className="px-2.5 py-1 rounded-[30px] border border-[#B8B8B8] inline-block text-xs text-[#B8B8B8] capitalize hover:bg-[#121011] hover:text-white hover:border-[#121011]"
+                              >
+                                {catagoryItem}
+                              </li>
+                            );
+                          })}
+                        </ul>
+                        <a
+                          className="absolute hidden group-hover:inline-flex gap-x-2 items-center text-md font-semibold text-white"
+                          href={WorkUrl}
+                          target="_blank"
+                          style={{ bottom: '0.5rem', overflow: 'hidden' }}
+                        >
+                          View Project <FaExternalLinkAlt />
+                        </a>
+                      </div>
+                    </div>
+                    <div className="relative order-first lg:order-last">
+                      <Image
+                        className="w-full h-[360px] object-cover"
+                        src={WorkThumb}
+                        alt="work"
+                      />
                     </div>
                   </div>
-                  <div className="relative order-first lg:order-last">
-                    <Image
-                      className="w-full h-[360px] object-cover"
-                      src={WorkThumb}
-                      alt="work"
-                    />
-                  </div>
-                </div>
+                </>
               );
             })}
           </div>
@@ -166,7 +169,7 @@ const WorkTabs = () => {
               return (
                 <div
                   key={id}
-                  className="p-5 bg-[#292929] grid grid-cols-1 lg:grid-cols-2 gap-y-6 gap-x-3 hover:bg-[#3D3D3D]"
+                  className="p-5 bg-[#292929] grid grid-cols-1 lg:grid-cols-2 gap-y-6 gap-x-3 hover:bg-[#3D3D3D] group relative"
                 >
                   <div className="flex flex-col justify-between order-last lg:order-first">
                     <h2 className="text-4xl font-bold text-white">
@@ -186,13 +189,14 @@ const WorkTabs = () => {
                           );
                         })}
                       </ul>
-                      <a
-                        className="inline-flex gap-x-2 items-center text-lg font-semibold text-white"
-                        href={WorkUrl}
-                        target="_blank"
-                      >
-                        View Project <FaExternalLinkAlt />
-                      </a>
+                        <a
+                          className="absolute hidden group-hover:inline-flex gap-x-2 items-center text-md font-semibold text-white"
+                          href={WorkUrl}
+                          target="_blank"
+                          style={{ bottom: '0.5rem', overflow: 'hidden' }}
+                        >
+                          View Project <FaExternalLinkAlt />
+                        </a>
                     </div>
                   </div>
                   <div className="relative order-first lg:order-last">
@@ -221,7 +225,7 @@ const WorkTabs = () => {
               return (
                 <div
                   key={id}
-                  className="p-5 bg-[#292929] grid grid-cols-1 lg:grid-cols-2 gap-y-6 gap-x-3 hover:bg-[#3D3D3D]"
+                  className="p-5 bg-[#292929] grid grid-cols-1 lg:grid-cols-2 gap-y-6 gap-x-3 hover:bg-[#3D3D3D] group relative"
                 >
                   <div className="flex flex-col justify-between order-last lg:order-first">
                     <h2 className="text-4xl font-bold text-white">
@@ -242,12 +246,13 @@ const WorkTabs = () => {
                         })}
                       </ul>
                       <a
-                        className="inline-flex gap-x-2 items-center text-lg font-semibold text-white"
-                        href={WorkUrl}
-                        target="_blank"
-                      >
-                        View Project <FaExternalLinkAlt />
-                      </a>
+                          className="absolute hidden group-hover:inline-flex gap-x-2 items-center text-md font-semibold text-white"
+                          href={WorkUrl}
+                          target="_blank"
+                          style={{ bottom: '0.5rem', overflow: 'hidden' }}
+                        >
+                          View Project <FaExternalLinkAlt />
+                        </a>
                     </div>
                   </div>
                   <div className="relative order-first lg:order-last">
@@ -276,7 +281,7 @@ const WorkTabs = () => {
               return (
                 <div
                   key={id}
-                  className="p-5 bg-[#292929] grid grid-cols-1 lg:grid-cols-2 gap-y-6 gap-x-3 hover:bg-[#3D3D3D]"
+                  className="p-5 bg-[#292929] grid grid-cols-1 lg:grid-cols-2 gap-y-6 gap-x-3 hover:bg-[#3D3D3D] group relative"
                 >
                   <div className="flex flex-col justify-between order-last lg:order-first">
                     <h2 className="text-4xl font-bold text-white">
@@ -297,12 +302,13 @@ const WorkTabs = () => {
                         })}
                       </ul>
                       <a
-                        className="inline-flex gap-x-2 items-center text-lg font-semibold text-white"
-                        href={WorkUrl}
-                        target="_blank"
-                      >
-                        View Project <FaExternalLinkAlt />
-                      </a>
+                          className="absolute hidden group-hover:inline-flex gap-x-2 items-center text-md font-semibold text-white"
+                          href={WorkUrl}
+                          target="_blank"
+                          style={{ bottom: '0.5rem', overflow: 'hidden' }}
+                        >
+                          View Project <FaExternalLinkAlt />
+                        </a>
                     </div>
                   </div>
                   <div className="relative order-first lg:order-last">
@@ -331,7 +337,7 @@ const WorkTabs = () => {
               return (
                 <div
                   key={id}
-                  className="p-5 bg-[#292929] grid grid-cols-1 lg:grid-cols-2 gap-y-6 gap-x-3 hover:bg-[#3D3D3D]"
+                  className="p-5 bg-[#292929] grid grid-cols-1 lg:grid-cols-2 gap-y-6 gap-x-3 hover:bg-[#3D3D3D] group relative"
                 >
                   <div className="flex flex-col justify-between order-last lg:order-first">
                     <h2 className="text-4xl font-bold text-white">
@@ -352,12 +358,13 @@ const WorkTabs = () => {
                         })}
                       </ul>
                       <a
-                        className="inline-flex gap-x-2 items-center text-lg font-semibold text-white"
-                        href={WorkUrl}
-                        target="_blank"
-                      >
-                        View Project <FaExternalLinkAlt />
-                      </a>
+                          className="absolute hidden group-hover:inline-flex gap-x-2 items-center text-md font-semibold text-white"
+                          href={WorkUrl}
+                          target="_blank"
+                          style={{ bottom: '0.5rem', overflow: 'hidden' }}
+                        >
+                          View Project <FaExternalLinkAlt />
+                        </a>
                     </div>
                   </div>
                   <div className="relative order-first lg:order-last">

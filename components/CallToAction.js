@@ -17,12 +17,20 @@ const CallToAction = () => {
           </div>
           <div className="md:w-6/12 md:ml-auto text-center md:text-left">
             <h2 className="text-3xl sm:text-4xl md:text-6xl	text-white font-bold mb-10">I’m available for Freelance Project</h2>
-            <Link
+            <a
               className="min-w-[140px] px-8 h-[60px] inline-flex justify-center items-center border border-[#B8B8B8] text-center text-lg font-semibold capitalize text-white gap-x-2 hover:bg-[#292929] hover:text-white hover:stroke-[#b8b8b8]"
-              href="/"
+              href="https://wa.me/+96894242973"
             >
               Start a Project
-            </Link>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+                  <mask id="mask0_744_115" style={{ maskType :'alpha'}} maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="21">
+                    <rect y="0.5" width="20" height="20" fill="#D9D9D9"/>
+                  </mask>
+                  <g mask="url(#mask0_744_115)">
+                    <path d="M11.6667 15.5L10.5 14.2917L13.4583 11.3333H3.33334V9.66667H13.4583L10.5 6.70833L11.6667 5.5L16.6667 10.5L11.6667 15.5Z" fill="#EEEEEE"/>
+                  </g>
+                </svg>
+            </a>
           </div>
         </div>
       </div>

@@ -20,12 +20,12 @@ const Header = () => {
             />
           </Link>
           <div className="flex md:order-2 gap-x-4">
-            <Link
-              to="contact" spy={true} smooth={true} offset={-100} duration={500}
-              className="cursor-pointer text-white  border border-white transition-all hover:bg-white hover:text-Scolor font-semibold text-base md:text-lg capitalize px-4 py-1.5 text-center"
+            <a
+              href="https://wa.me/+96894242973"
+              className="cursor-pointer text-white  border border-white transition-all font-semibold text-base md:text-lg capitalize px-4 py-1.5 text-center hover:bg-[#292929] hover:text-white hover:stroke-[#b8b8b8]"
             >
               Hire me
-            </Link>
+            </a>
             <button
               onClick={handleToggle}
               type="button"
