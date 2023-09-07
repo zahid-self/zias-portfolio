@@ -49,7 +49,7 @@ const HeroBanner = () => {
                 className="min-w-[140px] px-4 h-[60px] inline-flex justify-center items-center border border-[#B8B8B8] text-center text-lg font-semibold capitalize text-white hover:bg-[#292929] hover:text-white hover:stroke-[#b8b8b8]"
                 href="/"
               >
-                My work
+                <span className="pr-2">My work</span>
 
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
                   <mask id="mask0_744_115" style={{ maskType :'alpha'}} maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="21">

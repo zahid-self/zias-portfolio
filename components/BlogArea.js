@@ -42,7 +42,7 @@ const BlogArea = () => {
           title="News & Blog"
           subtitle="Read our daily blog for tips, resources and strategy"
         />
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {PostData.map((curElm) => {
             const {
               id,

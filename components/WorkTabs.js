@@ -120,7 +120,7 @@ const WorkTabs = () => {
                       </h2>
                       <div className="mt-5">
                         <p className="text-base text-[#F5F5F5]">{WorkDesc}</p>
-                        <ul className="flex flex-wrap gap-2 my-5">
+                        <ul className="flex flex-wrap gap-2 my-5 group-hover:mb-16">
                           {WorkCatagory.map((catagoryItem, index) => {
                             return (
                               <li
@@ -133,10 +133,10 @@ const WorkTabs = () => {
                           })}
                         </ul>
                         <a
-                          className="absolute hidden group-hover:inline-flex gap-x-2 items-center text-md font-semibold text-white"
+                          className="absolute hidden group-hover:inline-flex gap-x-2 items-end text-md font-semibold text-white mt-10"
                           href={WorkUrl}
                           target="_blank"
-                          style={{ bottom: '0.5rem', overflow: 'hidden' }}
+                          style={{ bottom: '1rem', transform: 'translateY(-10px)', overflow: 'hidden' }}
                         >
                           View Project <FaExternalLinkAlt />
                         </a>
@@ -177,7 +177,7 @@ const WorkTabs = () => {
                     </h2>
                     <div className="mt-5">
                       <p className="text-base text-[#F5F5F5]">{WorkDesc}</p>
-                      <ul className="flex flex-wrap gap-2 my-5">
+                      <ul className="flex flex-wrap gap-2 my-5 group-hover:mb-16">
                         {WorkCatagory.map((catagoryItem, index) => {
                           return (
                             <li
@@ -193,7 +193,7 @@ const WorkTabs = () => {
                           className="absolute hidden group-hover:inline-flex gap-x-2 items-center text-md font-semibold text-white"
                           href={WorkUrl}
                           target="_blank"
-                          style={{ bottom: '0.5rem', overflow: 'hidden' }}
+                          style={{ bottom: '1rem',transform: 'translateY(-10px)',overflow: 'hidden' }}
                         >
                           View Project <FaExternalLinkAlt />
                         </a>
@@ -233,7 +233,7 @@ const WorkTabs = () => {
                     </h2>
                     <div className="mt-5">
                       <p className="text-base text-[#F5F5F5]">{WorkDesc}</p>
-                      <ul className="flex flex-wrap gap-2 my-5">
+                      <ul className="flex flex-wrap gap-2 my-5 group-hover:mb-16">
                         {WorkCatagory.map((catagoryItem, index) => {
                           return (
                             <li
@@ -249,7 +249,7 @@ const WorkTabs = () => {
                           className="absolute hidden group-hover:inline-flex gap-x-2 items-center text-md font-semibold text-white"
                           href={WorkUrl}
                           target="_blank"
-                          style={{ bottom: '0.5rem', overflow: 'hidden' }}
+                          style={{ bottom: '1rem',transform: 'translateY(-10px)',overflow: 'hidden' }}
                         >
                           View Project <FaExternalLinkAlt />
                         </a>
@@ -289,7 +289,7 @@ const WorkTabs = () => {
                     </h2>
                     <div className="mt-5">
                       <p className="text-base text-[#F5F5F5]">{WorkDesc}</p>
-                      <ul className="flex flex-wrap gap-2 my-5">
+                      <ul className="flex flex-wrap gap-2 my-5 group-hover:mb-16">
                         {WorkCatagory.map((catagoryItem, index) => {
                           return (
                             <li
@@ -305,7 +305,7 @@ const WorkTabs = () => {
                           className="absolute hidden group-hover:inline-flex gap-x-2 items-center text-md font-semibold text-white"
                           href={WorkUrl}
                           target="_blank"
-                          style={{ bottom: '0.5rem', overflow: 'hidden' }}
+                          style={{ bottom: '1rem',transform: 'translateY(-10px)',overflow: 'hidden' }}
                         >
                           View Project <FaExternalLinkAlt />
                         </a>
@@ -345,7 +345,7 @@ const WorkTabs = () => {
                     </h2>
                     <div className="mt-5">
                       <p className="text-base text-[#F5F5F5]">{WorkDesc}</p>
-                      <ul className="flex flex-wrap gap-2 my-5">
+                      <ul className="flex flex-wrap gap-2 my-5 group-hover:mb-16">
                         {WorkCatagory.map((catagoryItem, index) => {
                           return (
                             <li
@@ -361,7 +361,7 @@ const WorkTabs = () => {
                           className="absolute hidden group-hover:inline-flex gap-x-2 items-center text-md font-semibold text-white"
                           href={WorkUrl}
                           target="_blank"
-                          style={{ bottom: '0.5rem', overflow: 'hidden' }}
+                          style={{ bottom: '1rem',transform: 'translateY(-10px)',overflow: 'hidden' }}
                         >
                           View Project <FaExternalLinkAlt />
                         </a>
